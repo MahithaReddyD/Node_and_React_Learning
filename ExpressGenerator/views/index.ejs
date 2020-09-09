@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle>
+            <%= tittle %>
+        </tittle>
+        <link rel='sytlesheet' href="/stylesheets/style.css">
+    </head>
+    <body>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Salary</th>
+            </thead>
+            <tbody>
+                <% for(let i=0; i<users.length; i++){ %>
+                    <tr>
+                        <td><%= users[i].name %></td>
+                        <td><%= users[i].age %></td>
+                        <td><%= users[i].salary %></td>
+                    </tr>
+                    <% } %>
+            </tbody>
+        </table>
+    </body>
+</html>
